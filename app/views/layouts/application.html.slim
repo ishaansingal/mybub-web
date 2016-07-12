@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title BabyTracker
+    meta name="viewport" content="width=device-width,  initial-scale=1"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    -# = stylesheet_link_tag    'application', media: 'all'
+    -# = javascript_include_tag 'application'
+    = csrf_meta_tags
+    -# = favicon_link_tag "favicon.ico"
+  body
+    -# -if flash[:error]
+    -#   %p.flash-error
+    -#     = flash[:error]
+    -# -if flash[:success]
+    -#   %p.flash-success
+    -#     = flash[:success]
+    -# -if flash[:notice]
+    -#   %p.flash-notice
+    -#     = flash[:notice]
+  =yield
+  /=footer
