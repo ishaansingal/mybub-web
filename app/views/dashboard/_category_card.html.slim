@@ -1,28 +1,26 @@
-.category-card.mdl-card.mdl-shadow--2dp
+.category-card.mdl-card.mdl-shadow--2dp.mdl-color-text--white.mdl-color--grey-600.mdl-typography--text-center
   h6 Sleeping
-  .mdl-card__supporting-text.mdl-typography--text-center
-    .mdl-grid
-      .mdl-cell.mdl-cell--6-col
-        div Last Sleep
-        div 4hrs 13mins
-      .mdl-cell.mdl-cell--6-col
-        div Slept Today
-        div 5hrs 13mins
-      .mdl-cell.mdl-cell--12-col
-        .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
-          .mdl-tabs__tab-bar
-            a.mdl-tabs__tab.is-active[href="#total"]
-              | TOTAL
-            a.mdl-tabs__tab[href="#session"]
-              | SESSION
-            a.mdl-tabs__tab[href="#interval"]
-              | INTERVAL
-          #total.mdl-tabs__panel.is-active
-            p Stuff
-          #session.mdl-tabs__panel
-            p Previous Stuff
-          #interval.mdl-tabs__panel
-            p Intervaled Stuff
-  .mdl-card__actions
-    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-      |  View Updates 
+  .mdl-grid
+    .mdl-cell.mdl-cell--6-col.mdl-color-text--white
+      div Last Sleep
+      div 4hrs 13mins
+    .mdl-cell.mdl-cell--6-col.mdl-color-text--white
+      div Slept Today
+      div 5hrs 13mins
+  .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+    .mdl-tabs__tab-bar.mdl-color-text--white
+      a.mdl-tabs__tab.is-active[href="#total"]
+        | TOTAL
+      a.mdl-tabs__tab[href="#session"]
+        | SESSION
+      a.mdl-tabs__tab[href="#interval"]
+        | INTERVAL
+    #total.mdl-tabs__panel.is-active
+      p Stuff
+    #session.mdl-tabs__panel
+      p Previous Stuff
+    #interval.mdl-tabs__panel
+      p Intervaled Stuff
+  /.mdl-card__actions
+  /  a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+  /    |  View Updates 
