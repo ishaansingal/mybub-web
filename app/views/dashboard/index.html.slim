@@ -1,8 +1,21 @@
-.mdl-grid
-  .mdl-layout-spacer
-  .mdl-grid
-    .mdl-cell.mdl-cell--12-col
-      h2 Owen
-    .mdl-cell.mdl-cell--12-col
-      =render 'category_card'
-  .mdl-layout-spacer
+.mdl-layout
+  ul.mdl-list
+    li.profile.mdl-list__item
+      .mdl-grid.mdl-typography--text-center
+        .mdl-cell.mdl-cell--12-col
+          =image_tag "favicon.png"
+        .title.mdl-cell.mdl-cell--12-col
+          h3 Owen
+    li.categories.mdl-list__item
+      .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+        .mdl-tabs__tab-bar.mdl-color-text--grey-600
+          a.mdl-tabs__tab.is-active[href="#feeding"]
+            h6 Feed
+            p 3hrs 22mins
+          a.mdl-tabs__tab.mdl-tabs--border[href="#sleeping"]
+            h6 Sleep
+            p 3hrs 22mins
+        #sleeping.mdl-tabs__panel.is-active
+          =render 'category_card', category: "Sleeping"
+        #feeding.mdl-tabs__panel
+          =render 'category_card', category: "Feeding"

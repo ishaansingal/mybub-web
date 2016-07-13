@@ -18,7 +18,9 @@ gem 'coffee-rails', '~> 4.2'
 gem "slim-rails"
 
 #Material Design
-gem 'material_design_lite-rails'
+# gem 'material_design_lite-rails'
+
+gem 'material_design_lite-sass'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
