@@ -10,12 +10,20 @@
       .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
         .mdl-tabs__tab-bar.mdl-color-text--grey-600
           a.mdl-tabs__tab.is-active[href="#feeding"]
+            =image_tag "icn-feed.png"
             h6 Feed
             p 3hrs 22mins
-          a.mdl-tabs__tab.mdl-tabs--border[href="#sleeping"]
+          a.mdl-tabs__tab[href="#change"]
+            =image_tag "icn-change.png"
+            h6 Change
+            p 3hrs 22mins
+          a.mdl-tabs__tab[href="#sleeping"]
+            =image_tag "icn-sleep.png"
             h6 Sleep
             p 3hrs 22mins
-        #sleeping.mdl-tabs__panel.is-active
-          =render 'category_card', category: "Sleeping"
-        #feeding.mdl-tabs__panel
+        #feeding.mdl-tabs__panel.is-active
           =render 'category_card', category: "Feeding"
+        #change.mdl-tabs__panel
+          =render 'category_card', category: "Change"
+        #sleeping.mdl-tabs__panel
+          =render 'category_card', category: "Sleeping"

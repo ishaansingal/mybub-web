@@ -10,3 +10,30 @@
     margin-top: 0;
   }
 }
+
+.categories .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  height: 5px;
+}
+
+.categories .mdl-tabs__tab {
+  border-right: 0.5px solid #F0F0F0;
+  width: 100%;
+  padding: 0 0 18px 0;
+  &:last-of-type {
+    border-right: none;
+  }
+  img {
+    height: 40px;
+  }
+  h6 {
+    font-weight: 500;
+    font-size: 1em;
+  }
+  p {
+    font-weight: 300;
+    font-size: 12px;
+    color: #7F7F7F;
+    line-height: 90%;
+  }
+}
+

@@ -1,0 +1,18 @@
+@import "variables";
+
+.category-card {
+  width: 100%;
+  .history {
+    text-align: right;
+  }
+
+  .chart {
+    text-align: center;
+    background: white;
+    color: $grey;
+    button.add-session {
+      background-color: #2F2F2F;
+      color: white;
+    }
+  }
+}

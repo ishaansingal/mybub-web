@@ -14,16 +14,10 @@
  *= require_self
  */
 
-@import "dashboard";
-
-//$color-primary: white !default;
-//$color-secondary: #666666 !default;
-//$tab-text-color: white !default;
-//$tab-active-text-color: white !default;
-$grey: #6E6E6E;
-$tab-highlight-color: $grey !default;
-
+@import "variables";
 @import "material";
+@import "dashboard";
+@import "card";
 
 body {
   max-width: 400px;
@@ -43,30 +37,8 @@ body {
 .mdl-tabs__tab-bar, .mdl-tabs__tab {
   height: 100%;
 }
-.mdl-tabs__tab-bar * {
+
+.mdl-tabs__tab * {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 1em;
-  h6 {
-    font-weight: 500;
-  }
-  p {
-    color: $grey;
-  }
-}
-.mdl-tabs__tab {
-  border-right: 0.5px solid #F0F0F0;
-  width: 100%;
-  &:last-of-type {
-    border-right: none;
-  }
-}
-
-.category-card {
-  width: 100%;
-}
-
-.chart {
-  background: white;
-  color: $grey;
 }
