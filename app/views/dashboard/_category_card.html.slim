@@ -1,7 +1,9 @@
 .category-card.mdl-card.mdl-shadow--2dp.mdl-color-text--white.mdl-color--grey-600
   .mdl-grid
-    .mdl-cell.mdl-cell--12-col.mdl-color-text--white
-      p =category
+    .mdl-cell.mdl-color-text--white
+      h4 =category
+    .history.mdl-cell.mdl-color-text--white
+      i.material-icons  history
     .mdl-cell.mdl-color-text--white
       div Last Sleep
       div 4hrs 13mins
@@ -9,10 +11,6 @@
       div Slept Today
       div 5hrs 13mins
   .chart
-    p Stuff
-    p Stuff
-    p Stuff
-    p Stuff
-  /.mdl-card__actions
-  /  a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
-  /    |  View Updates 
+    =image_tag "chart.png"
+    button.add-session.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect
+      i.material-icons add
